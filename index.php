@@ -52,5 +52,5 @@ echo "<hr>";
 echo $qris->prosesPembayaran();
 echo "<br>";
 echo $qris->cetakStruk();
->>>>>>> 1e55c69a479e2dcf4f22bf73f8fe865b3331fe25
+echo "test update"
 ?>
