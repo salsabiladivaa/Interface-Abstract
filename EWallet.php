@@ -2,19 +2,19 @@
 require_once 'Pembayaran.php';
 require_once 'Cetak.php';
 
-class QRIS extends Pembayaran implements Cetak
+class EWallet extends Pembayaran implements Cetak
 {
     public function prosesPembayaran()
     {
         if ($this->validasi()) {
-            return "Pembayaran QRIS berhasil";
+            return "Pembayaran E-Wallet berhasil";
         }
         return "Jumlah tidak valid";
     }
 
     public function cetakStruk()
     {
-        return "Struk QRIS <br> 
+        return "Struk E-Wallet <br> 
                 Nominal Awal: Rp " . number_format($this->jumlah, 0, ',', '.') . " <br> 
                 Diskon 10%: Rp " . number_format($this->diskon, 0, ',', '.') . " <br> 
                 Pajak 11%: Rp " . number_format($this->pajak, 0, ',', '.') . " <br> 
