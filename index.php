@@ -1,7 +1,7 @@
 <?php
-require_once 'TransferBank.php';
-require_once 'Ewallet.php';
-require_once 'QRIS.php';
+require_once 'transferBank.php';
+require_once 'e-wallet.php';
+require_once 'qris.php';
 
 // objek
 $transfer = new TransferBank(100000);
